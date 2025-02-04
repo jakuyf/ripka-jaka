@@ -226,7 +226,7 @@ var x = setInterval(function() {
 
     <!-- Overlay dengan nama tamu -->
     <div class="overlay" id="overlay">
-        <p id="welcome-message">Kepada Yth.</p>
+        <p id="welcome-message">Kepada Yth.Kepada Yth. Bapak/Ibu/Saudara/i</p>
           <p><b>ㅤㅤㅤ</b></p>
         <button class="open-button" onclick="bukaUndangan()">Buka Undangan</button>
     </div>
@@ -252,7 +252,7 @@ var x = setInterval(function() {
         // Ambil nama dari URL dan tampilkan
         const namaTamu = getNamaDariHash();
         if (namaTamu) {
-            document.getElementById("welcome-message").innerText = `Kepada Yth. Bapak/Ibu/Saudara/i ${namaTamu} Di Tempat`;
+            document.getElementById("welcome-message").innerText = `Kepada Yth. Bapak/Ibu/Saudara/i ${namaTamu}`;
         }
     </script>
 
@@ -755,5 +755,6 @@ perkenankan kami menikahkan putra putri kami :</p>
 </body>
 
 </html>
+
 
 
