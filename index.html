@@ -173,7 +173,7 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 <p>ㅤㅤ</p>
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -216,7 +216,7 @@ var x = setInterval(function() {
             transform: scale(1.05);
         }
 
-        /* Teks nama tamu menjadi bold dan beri spasi bawah */
+        /* Teks nama tamu menjadi bold */
         #welcome-message {
             font-size: 24px;
             margin-bottom: 30px; /* Menambah jarak ke bawah */
@@ -224,7 +224,12 @@ var x = setInterval(function() {
 
         #guest-name {
             font-weight: bold; /* Nama tamu di-bold */
-            margin-top: 20px; /* Memberikan jarak ke bawah */
+        }
+
+        /* Teks kecil di bawah nama tamu */
+        #small-text {
+            font-size: 14px;
+            color: #ccc;
         }
 
         /* Tombol Play/Pause dengan background */
@@ -262,7 +267,12 @@ var x = setInterval(function() {
 
     <!-- Overlay dengan nama tamu -->
     <div class="overlay" id="overlay">
-        <p id="welcome-message">Kepada Yth Bapak/Ibu/Saudara/i <span id="guest-name"></span></p>
+        <p id="welcome-message">Kepada Yth. Bapak/Ibu/Saudara/i</p> 
+        <span id="guest-name"></span>
+        
+        <!-- Teks kecil yang ditambahkan di bawah nama tamu -->
+        <p id="small-text">Tanpa mengurangi rasa hormat, izinkan kami untuk mengundang Anda untuk hadir pada acara pernikahan kami.</p>
+ <p>ㅤㅤ</p>
         <button class="open-button" onclick="bukaUndangan()">Buka Undangan</button>
     </div>
 
@@ -314,6 +324,9 @@ var x = setInterval(function() {
 </body>
 </html>
 
+</body>
+</html>
+
 
 
 </body>
@@ -348,32 +361,39 @@ var x = setInterval(function() {
 mahluk-Nya berpasang-pasangan. Ya Allah 
 perkenankan kami menikahkan putra putri kami :</p>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="single_couple mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
+    <div class="col-md-6">
+        <div class="single_couple mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
+            <div class="couple_image">
+                <a href="https://www.instagram.com/ripka_236/"><img src="assets/images/couple-2.jpg" alt="Couple"></a>
+            </div>
+            <div class="couple_content text-center">
+                <img class="shape" src="assets/images/couple-shape.png" alt="shape">
+                <a href="https://www.instagram.com/ripka_236/"><h4 class="couple_name">Ripka Fitriyani</h4></a>
+                <span><a href="https://www.instagram.com/ripka_236/" style="font-weight: normal; color: #A67C52;">🅾 @Ripka_236 🅾</a></span>
+                <p>Putri Pertama dari Bapak Bani & Ibu Maryani</p>
+                <!-- Menambahkan IG handle di bawah nama -->
+                
+            </div>
+        </div> <!-- single couple -->
+    </div>
+    <div class="col-md-6">
+        <div class="single_couple mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.6s">
+            <div class="couple_image">
+                <a href="https://www.instagram.com/jakuyf/"><img src="assets/images/couple-1.jpg" alt="Couple"></a>
+            </div>
+            <div class="couple_content text-center">
+                <img class="shape" src="assets/images/couple-shape.png" alt="shape">
 
-                        <div class="couple_image">
-                          <a href="https://www.instagram.com/ripka_236/"><img src="assets/images/couple-2.jpg" alt="Couple"></i></a>
-                        </div>
-                        <div class="couple_content text-center">
-                            <img class="shape" src="assets/images/couple-shape.png" alt="shape">
-                    <a href="https://www.instagram.com/ripka_236/"><h4 class="couple_name">Ripka Fitriyani</h4></i></a>
-                            <p>Putri Pertama dari Bapak Bani & Ibu Maryani</p>
-                            </ul>
-                        </div>
-                    </div> <!-- single couple -->
-                </div>
-                <div class="col-md-6">
-                    <div class="single_couple mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.6s">
-                        <div class="couple_image">
-                           <a href="https://www.instagram.com/jakuyf/"><img src="assets/images/couple-1.jpg" alt="Couple"></i></a> 
-                        </div>
-                        <div class="couple_content text-center">
-                            <img class="shape" src="assets/images/couple-shape.png" alt="shape">
-                            <a href="https://www.instagram.com/jakuyf/"><h4 class="couple_name">Muhammad Jaka Fatahillah</h4></a> 
-                            <p>Putra Kedua dari Bapak Winda Margawiguna (Alm) & Ibu Nuning Partiningsih (Alm)</p>      
-                            </ul>
-                        </div>
-                    </div> <!-- single couple -->
+                <a href="https://www.instagram.com/jakuyf/"><h4 class="couple_name">Muhammad Jaka Fatahillah</h4></a>
+                 <span><a href="https://www.instagram.com/jakuyf/" style="font-weight: normal; color: #A67C52;">🅾 @JakuyF 🅾</a></span>
+                <p>Putra Kedua dari Bapak Winda Margawiguna (Alm) & Ibu Nuning Partiningsih (Alm)</p> 
+                <!-- Menambahkan IG handle di bawah nama -->
+               
+            </div>
+        </div> <!-- single couple -->
+    </div>
+</div>
+
 
                 </div>
                         <p>ㅤㅤ</p>
@@ -420,10 +440,10 @@ perkenankan kami menikahkan putra putri kami :</p>
                         <div class="event_content">
                            
                             <h3 class="event_title"><a>Akad Nikah</a></h3>
-                             <span class="date">Sabtu, 01 November 2025</span>
+                             <p class="date">Sabtu, 01 November 2025</p>
                             <p>09.00 WIB s.d 10.00 WIB</p>
                              <h3 class="event_title"><a>Resepsi Pernikahan</a></h3>
-                              <span class="date">Sabtu, 01 November 2025</span>
+                              <p class="date">Sabtu, 01 November 2025</p>
                             <p>10.00 WIB s.d 14.00 WIB</p>
                             <h3 class="event_title"><a>Lokasi Pernikahan</a></h3>
                             <p>Jalan Syeh Quro
@@ -691,7 +711,7 @@ perkenankan kami menikahkan putra putri kami :</p>
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSe7K7cFYydK8tYyY4Kxq5BuVtgGd7qE6v3o4WIG_ye2kPf3pQ/viewform" style="color: #D59A57" rel="nofollow"><h3 class="title">Best Wish</h3> 
                         <img src="assets/images/section_shape.png" alt="Shape"></a></p></b>
                     </div> <!-- section title -->
-                <p>Untuk mengirimkan doa & ucapan, silakan tuliskan pada link berikut :</p>
+                <p>Untuk mengirimkan doa & ucapan, silahkan tuliskan pada link berikut :</p>
                   <p><b>ㅤㅤㅤ</b></p>
 <a href="https://forms.gle/HKoC7MY4yoKMFchj8" class="custom-button" target="_blank" rel="nofollow">Kirim Doa & Ucapan</a>
 
