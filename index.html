@@ -1,0 +1,814 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+
+<!-- Welcome page Start -->
+
+<div id='welcome-wrapper'>
+
+<b:section class='welcome' id='welcome' showaddelement='no'>
+
+<b:widget id='Text88' locked='false' title='' type='Text'/>
+
+<b:widget id='HTML88' locked='false' title='' type='HTML'/>
+
+</b:section>
+
+</div>
+
+<!-- Welcome page End -->
+
+<head>
+    <meta charset="utf-8">
+
+    <!--====== Title ======-->
+    <title>The Wedding of Ripka & Jaka</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+    
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+
+
+    <!--====== HEADER PART START ======-->
+
+    <section class="header_area">
+        <div class="header_navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo.png" alt="Logo">
+
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                 
+
+
+
+
+
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="#home">Cover</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#couple">Couple</a>
+                                    </li>
+                                      <li class="nav-item">
+                                        <a class="page-scroll" href="#event">Events</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#our_love">Love Story</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#gift">Gift</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#wish">Wish</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- header navbar -->
+
+        <div id="home" class="header_slider slider-active">
+            <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(assets/images/slider-1.jpg)">
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="slider_content text-center">
+
+                                <h5 class="slider_sub_title" data-animation="fadeInUp" data-delay="0.2s">The Wedding of</h5>
+                                <h2 class="slider_title" data-animation="fadeInUp" data-delay="0.7s">Ripka <span>&</span> Jaka</h2>
+
+                                <p data-animation="fadeInUp" data-delay="1.4s"><img src="assets/images/header-shape-1.png" alt="Shape">01 ∙ 11 ∙ 2025<img src="assets/images/header-shape-2.png" alt="Shape"></p>
+                                    <p id="demo"></p>
+                                <script>
+// Mengatur waktu akhir perhitungan mundur
+var countDownDate = new Date("Dec 20, 2025 09:00:00").getTime();
+
+// Memperbarui hitungan mundur setiap 1 detik
+var x = setInterval(function() {
+
+  // Untuk mendapatkan tanggal dan waktu hari ini
+  var now = new Date().getTime();
+    
+  // Temukan jarak antara sekarang dan tanggal hitung mundur
+  var distance = countDownDate - now;
+    
+  // Perhitungan waktu untuk hari, jam, menit dan detik
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Keluarkan hasil dalam elemen dengan id = "demo"
+  document.getElementById("demo").innerHTML = days + " hari " + hours + " jam "
+  + minutes + " menit " + seconds + " detik ";
+    
+  // Jika hitungan mundur selesai, tulis beberapa teks 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "20 Dec 2025";
+  }
+}, 1000);
+</script>
+<p>ㅤㅤ</p>
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <style>
+        /* Overlay untuk menutupi layar sebelum undangan dibuka */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            z-index: 9999;
+            padding: 20px;
+        }
+
+        .open-button {
+            background-color: #A67C52; /* Warna gold kecoklatan */
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 25px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .open-button:hover {
+            background-color: #8D6E4D; /* Warna lebih gelap saat hover */
+            transform: scale(1.05);
+        }
+
+        /* Teks nama tamu menjadi bold dan beri spasi bawah */
+        #welcome-message {
+            font-size: 24px;
+            margin-bottom: 30px; /* Menambah jarak ke bawah */
+        }
+
+        #guest-name {
+            font-weight: bold; /* Nama tamu di-bold */
+            margin-top: 20px; /* Memberikan jarak ke bawah */
+        }
+
+        /* Tombol Play/Pause dengan background */
+        .music-control {
+            position: fixed;
+            bottom: 20px;
+            left: 20px; /* Pindahkan tombol ke kiri bawah */
+            background-color: #C7A17A; /* Soft gold dengan sedikit coklat */
+            padding: 10px 15px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            z-index: 9998;
+            transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+            border: none; /* Menghilangkan border hitam */
+        }
+
+        .music-control img {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .music-control:hover {
+            background-color: #B38B5D; /* Warna sedikit lebih gelap saat hover */
+            transform: scale(1.05); /* Efek pembesaran saat di-hover */
+        }
+
+        .music-control img:hover {
+            transform: scale(1.1); /* Efek pembesaran pada gambar ikon */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Overlay dengan nama tamu -->
+    <div class="overlay" id="overlay">
+        <p id="welcome-message">Kepada Yth Bapak/Ibu/Saudara/i <span id="guest-name"></span></p>
+        <button class="open-button" onclick="bukaUndangan()">Buka Undangan</button>
+    </div>
+
+    <!-- Audio yang akan diputar -->
+    <audio id="audio" loop>
+        <source src="assets/audio1.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung tag audio.
+    </audio>
+
+    <!-- Tombol Play/Pause dengan background -->
+    <button class="music-control" id="playPauseBtn" onclick="togglePlayPause()">
+        <img id="playPauseIcon" src="assets/play-icon.png" alt="Play Icon">
+    </button>
+
+    <script>
+        function getNamaDariHash() {
+            // Ambil nama dari URL hash (setelah #)
+            const hash = window.location.hash.substring(1); // Menghapus #
+            return hash ? decodeURIComponent(hash) : null;
+        }
+
+        function bukaUndangan() {
+            document.getElementById("overlay").style.display = "none"; // Hilangkan overlay
+            document.getElementById("audio").play(); // Mulai musik
+            document.getElementById("playPauseIcon").src = "assets/pause-icon.png"; // Ganti ikon menjadi pause
+        }
+
+        // Fungsi untuk toggle play/pause musik
+        function togglePlayPause() {
+            const audio = document.getElementById("audio");
+            const playPauseIcon = document.getElementById("playPauseIcon");
+
+            if (audio.paused) {
+                audio.play();
+                playPauseIcon.src = "assets/pause-icon.png"; // Ganti ikon menjadi pause
+            } else {
+                audio.pause();
+                playPauseIcon.src = "assets/play-icon.png"; // Ganti ikon menjadi play
+            }
+        }
+
+        // Ambil nama dari URL dan tampilkan
+        const namaTamu = getNamaDariHash();
+        if (namaTamu) {
+            document.getElementById("guest-name").innerText = namaTamu;
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+</body>
+</html>
+
+
+                            </div> <!-- slider content -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- single slider -->
+        </div> <!-- header slider -->
+    </section>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== COUPLE PART START ======-->
+
+    <section id="couple" class="couple_area pt-120 pb-130">
+        <div class="container">        
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-30">
+                        <h3 class="title">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</h3>
+                        <img src="assets/images/section_shape.png" alt="Shape">
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+<div class="text-center">
+                <p>Assalamualaikum warahmatullah wabarakatuh</p>
+            <p>Maha suci Allah yang telah menciptakan
+mahluk-Nya berpasang-pasangan. Ya Allah 
+perkenankan kami menikahkan putra putri kami :</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="single_couple mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
+
+                        <div class="couple_image">
+                          <a href="https://www.instagram.com/ripka_236/"><img src="assets/images/couple-2.jpg" alt="Couple"></i></a>
+                        </div>
+                        <div class="couple_content text-center">
+                            <img class="shape" src="assets/images/couple-shape.png" alt="shape">
+                    <a href="https://www.instagram.com/ripka_236/"><h4 class="couple_name">Ripka Fitriyani</h4></i></a>
+                            <p>Putri Pertama dari Bapak Bani & Ibu Maryani</p>
+                            </ul>
+                        </div>
+                    </div> <!-- single couple -->
+                </div>
+                <div class="col-md-6">
+                    <div class="single_couple mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.6s">
+                        <div class="couple_image">
+                           <a href="https://www.instagram.com/jakuyf/"><img src="assets/images/couple-1.jpg" alt="Couple"></i></a> 
+                        </div>
+                        <div class="couple_content text-center">
+                            <img class="shape" src="assets/images/couple-shape.png" alt="shape">
+                            <a href="https://www.instagram.com/jakuyf/"><h4 class="couple_name">Muhammad Jaka Fatahillah</h4></a> 
+                            <p>Putra Kedua dari Bapak Winda Margawiguna (Alm) & Ibu Nuning Partiningsih (Alm)</p>      
+                            </ul>
+                        </div>
+                    </div> <!-- single couple -->
+
+                </div>
+                        <p>ㅤㅤ</p>
+                              <i>“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.” (QS. Ar-Rum [3] ayat 21).</i>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+
+    <!--====== COUPLE PART ENDS ======-->
+
+
+    <!--====== EVENT PART START ======-->
+
+
+    <!--====== EVENT PART ENDS ======-->
+
+    <!--====== COMING SOON PART START ======-->
+
+    <section id="coming_soon" class="coming_soon_area pt-20 pb-70">
+        <div class="coming_soon_shape_1">
+            <img src="assets/images/shape-1.png" alt="shape">
+        </div> <!-- shape -->
+
+        <div class="container">
+
+    <section id="event" class="event_area pt-120 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-30">
+                        <h3 class="title">Weeding Events</h3>
+                        <img src="assets/images/section_shape.png" alt="Shape">
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+         
+                <div class="col-lg-7 col-md-7">
+                    <div class="single_event mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <div class="event_image">
+                            <img src="assets/images/event-2.jpg" alt="event">
+                        </div>
+                        <div class="event_content">
+                           
+                            <h3 class="event_title"><a>Akad Nikah</a></h3>
+                             <span class="date">Sabtu, 01 November 2025</span>
+                            <p>09.00 WIB s.d 10.00 WIB</p>
+                             <h3 class="event_title"><a>Resepsi Pernikahan</a></h3>
+                              <span class="date">Sabtu, 01 November 2025</span>
+                            <p>10.00 WIB s.d 14.00 WIB</p>
+                            <h3 class="event_title"><a>Lokasi Pernikahan</a></h3>
+                            <p>Jalan Syeh Quro
+                            Dusun Kerajan II RT 002/ RW 004, Desa Kedawung, Kecamatan Lemahabang, Kabupaten Karawang</p>
+                             <p><b>ㅤㅤㅤ</b></p>
+                           <a href="https://maps.app.goo.gl/pQrBkNi9Ft4WLpX18" class="custom-button" target="_blank" rel="nofollow">Lihat Lokasi di Google Maps</a>
+
+<style>
+  .custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #D59A57;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .custom-button:hover {
+    background-color: #b77e44;
+  }
+</style>
+
+                        </div>
+                    </div> <!-- single event -->
+                </div>
+                       <div class="col-lg-9 col-md-0">
+                    <div class="single_event mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                      
+                 
+    </section>
+
+
+    <!--====== CONTACT PART START ======-->
+
+    <footer id="footer" class="footer_area">
+        <div class="footer_shape_1">
+            <img src="assets/images/shape-1.png" alt="shape">
+        </div> <!-- shape -->
+   
+
+    <!--====== CONTACT PART ENDS ======-->
+
+        </div> <!-- container -->
+
+        <div class="coming_soon_shape_2">
+            <img src="assets/images/shape-2.png" alt="shape">
+        </div> <!-- shape -->
+    </section>
+
+    <!--====== COMING SOON PART ENDS ======-->
+
+    <!--====== OUR LOVE PART START ======-->
+
+    <section id="our_love" class="our_love_area pt-120">
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-30">
+                        <h3 class="title">Our Love Story</h3>
+                        <img src="assets/images/section_shape.png" alt="Shape">
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="love_wrapper">
+                <div class="single_love d-flex flex-wrap align-items-center">
+                    <div class="love_content order-md-last wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <h3 class="love_title">First Meet</h3>
+                        <p>Kami pertama kali bertemu sebagai teman kelompok ospek & teman sekelas saat berkuliah di Jakarta pada tahun 2018. Walaupun pada tahun 2019 kami sudah tidak dikampus yang sama lagi, namun kami masih sering berkomunikasi hingga saat ini karena memiliki minat & hobi yang sama.
+                    </p>
+                    </div>
+                    <div class="love_date">
+                        <p><i class="lni lni-heart-filled"></i>2018</p>
+                    </div>
+                    <div class="love_image order-md-first wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <img src="assets/images/love-1.jpg" alt="love">
+                    </div>
+                </div> <!-- single love -->
+
+                <div class="single_love d-flex flex-wrap align-items-center">
+                    <div class="love_content text-lg-right wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <h3 class="love_title">Ta'aruf</h3>
+                        <p>Setelah menjalani pertemanan yang cukup lama, kami akhirnya memutuskan untuk ta'aruf pada tahun 2024 untuk lebih saling mengenal satu sama lain. Hingga pada tahun 2025, akhirnya kami sepakat untuk melanjutkan ke jenjang yang lebih serius.</p>
+                    </div>
+                    <div class="love_date">
+                        <p><i class="lni lni-heart-filled"></i>2024</p>
+                    </div>
+                    <div class="love_image wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <img src="assets/images/love-2.jpg" alt="love">
+                    </div>
+                </div> <!-- single love -->
+
+                <div class="single_love d-flex flex-wrap align-items-center">
+                    <div class="love_content order-md-last wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <h3 class="love_title">Lamaran</h3>
+                        <p>Acara lamaran telah kami adakan pada tanggal 07 September 2025, hal itu menjadi langkah awal kami untuk semakin menguatkan keyakinan dalam melangkah kedepan bersama. Setelah berbagai persiapan dan doa, kami pun akhirnya menetapkan hari yang paling istimewa dalam perjalanan cinta kami selanjutnya, insyaAllah kami akan menikah pada tanggal 01 November 2025. </p>
+                    </div>
+                    <div class="love_date">
+                        <p><i class="lni lni-heart-filled"></i>2025</p>
+                    </div>
+                    <div class="love_image order-md-first wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <img src="assets/images/love-3.jpg" alt="love">
+                    </div>
+
+                </div> <!-- single love -->
+            </div> <!-- love wrapper -->
+
+<p><b>ㅤㅤㅤ</b></p>
+  <p>ㅤㅤㅤ</p>
+          <div class="row justify-content-center">
+                    <div class="section_title text-center pb-5">
+                         <h3 class="title"> <span>Gallery</span></h3>
+                       <img src="assets/images/section_shape.png" alt="Shape">
+<div class="slider">
+      <p>ㅤㅤㅤ</p>
+        <figure>
+            <div class="slide">
+                <img src="assets/gallery/foto1.png">
+            </div>
+
+            <div class="slide">
+                <img src="assets/gallery/foto2.png">
+            </div>
+
+            <div class="slide">
+                <img src="assets/gallery/foto3.png">
+            </div>
+
+            <div class="slide">
+                <img src="assets/gallery/foto4.png">
+            </div>
+
+             <div class="slide">
+                <img src="assets/gallery/foto5.png">
+            </div>
+        </figure>
+    </div>
+        </div> <!-- container -->
+    </section>
+
+    <!--====== OUR LOVE PART ENDS ======-->
+  <p>ㅤㅤㅤ</p>
+ 
+
+    <!--====== GALLERY PART START ======-->
+
+
+  
+    <section id="coming_soon" class="coming_soon_area pt-20 pb-70">
+        <div class="coming_soon_shape_1">
+            <img src="assets/images/shape-1.png" alt="shape">
+        </div> <!-- shape -->
+<div class="container">
+    <section id="event" class="event_area pt-120 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="section_title text-center pb-30">
+                    <h3 class="title">Wedding <span>Gift</span></h3>
+                    <img src="assets/images/section_shape.png" alt="Shape">
+                    <div class="text-center">
+                        <div class="section_logo">
+                            <div class="single_event mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                                <a><img src="assets/images/logo-1.png" alt="logo"></a>
+                                <p><b>ㅤㅤㅤ</b></p>
+                                <h>Bagi Keluarga dan Kerabat yang ingin mengirimkan hadiah, silahkan mengirimkan nya melalui Transfer Rek BRI:</h>
+                                <b id="rekening">186601000472531</b> atas nama <b>Muhammad Jaka Fatahillah</b>
+                                <p><b>ㅤㅤㅤ</b></p><!-- Tombol Copy -->
+<button id="copyButton" onclick="copyRekening()" class="custom-button">Salin Nomor Rekening</button>
+<p><b>ㅤㅤㅤ</b></p>
+<i>Sebelumnya, kami ucapkan terima kasih atas perhatian Bapak/Ibu/Saudara/i untuk kami.</i>
+
+<style>
+  .custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #D59A57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .custom-button:hover {
+    background-color: #b77e44;
+    transform: scale(1.05);
+  }
+
+  .custom-button:active {
+    background-color: #a36f38;
+    transform: scale(0.98);
+  }
+</style>
+
+<script>
+  // Fungsi untuk menyalin nomor rekening
+  function copyRekening() {
+      // Nomor rekening yang akan disalin
+      const rekening = "186601000472531";
+      
+      // Buat elemen textarea sementara untuk menyalin teks
+      const tempInput = document.createElement("textarea");
+      tempInput.value = rekening;
+      document.body.appendChild(tempInput);
+
+      // Pilih dan salin teks
+      tempInput.select();
+      document.execCommand("copy");
+
+      // Hapus elemen textarea sementara
+      document.body.removeChild(tempInput);
+
+      // Tampilkan notifikasi (opsional)
+      alert("Nomor rekening berhasil disalin! Terima kasih!");
+  }
+</script>
+
+
+         
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== GALLERY PART ENDS ======-->
+
+   <!--====== CONTACT PART ENDS ======-->
+
+        </div> <!-- container -->
+
+        <div class="coming_soon_shape_2">
+            <img src="assets/images/shape-2.png" alt="shape">
+        </div> <!-- shape -->
+    </section>
+
+    <!--====== COMING SOON PART ENDS ======-->
+
+    <!--====== OUR LOVE PART ENDS ======-->
+    
+
+    <!--====== COUPLE PART START ======-->
+
+                     
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== FOOTER PART START ======-->
+
+        </div> <!-- shape -->
+        </div>
+
+            <footer id="wish" class="wish_area pt-0">
+            <div class="footer_widget pt-0 pb-0 text-center">
+                <div class="footer_title">
+
+    <footer id="event" class="event_area pt-120 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-30">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe7K7cFYydK8tYyY4Kxq5BuVtgGd7qE6v3o4WIG_ye2kPf3pQ/viewform" style="color: #D59A57" rel="nofollow"><h3 class="title">Best Wish</h3> 
+                        <img src="assets/images/section_shape.png" alt="Shape"></a></p></b>
+                    </div> <!-- section title -->
+                <p>Untuk mengirimkan doa & ucapan, silakan tuliskan pada link berikut :</p>
+                  <p><b>ㅤㅤㅤ</b></p>
+<a href="https://forms.gle/HKoC7MY4yoKMFchj8" class="custom-button" target="_blank" rel="nofollow">Kirim Doa & Ucapan</a>
+
+<style>
+  .custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    background-color: #D59A57;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .custom-button:hover {
+    background-color: #b77e44;
+    transform: scale(1.05);
+  }
+
+  .custom-button:active {
+    background-color: #a36f38;
+    transform: scale(0.98);
+  }
+</style>
+
+                </div>
+         
+
+    </div> <!-- /section-intro -->
+    <p>ㅤㅤㅤ</p>
+                        <div class="love_content text-lg-left wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+ <div class="footer_widget pt-0 pb-0 text-left">
+                        <div class="footer_widget pt-10 pb-10 text-left">
+                   <p>  <h3>Doa & Ucapan : </h3>  </p>
+
+  <p><b>ㅤㅤㅤ</b></p>
+                    <div class="love_content text-lg-left wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                    <img src="assets/images/unknow.jpg" alt="Shape"> <b>Jakuyf</b><p><i>Sep 22, 2025 at 15.32 </i></p>
+                   
+                </p>
+                    <p class="desc">"Barakallahu lakuma wa baraka alaikuma wa jamaa bainakuma fii khair, May Allah strengthen the knot that keeps your hearts together and blesses two hearts with faith and love for each other."
+                    </p>
+
+
+
+
+               
+
+
+                    
+               </div> <!-- /service -->
+
+          </div> <!-- /services-list -->
+        
+    </div> <!-- /services-content -->
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== GALLERY PART ENDS ======-->
+
+
+
+
+    <!--====== PART START ======-->
+</div>
+
+          
+<a href="#" class="back-to-top" style="display: inline-block;"><i class="lni lni-chevron-up"></i></a>
+
+        </div>
+<div class="footer_copyright text-center">
+                <p>©Copyright 2025</p>
+                    <p>Developed and Design with ❤️ by <a href="https://jakuyf.github.io/portfolio" style="color: #D59A57" rel="nofollow">JakuyF</a> for my beloved wife </p>
+            </div>
+    <!--====== BACK TOP TOP PART START ======-->
+<!--
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+
+    <!--====== PART ENDS ======-->
+
+    <!-- row -->
+
+
+
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+
+    <!--====== wow js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
