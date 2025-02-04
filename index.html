@@ -173,7 +173,7 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 <p>ㅤㅤ</p>
-                              <!DOCTYPE html>
+                         <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -226,9 +226,8 @@ var x = setInterval(function() {
 
     <!-- Overlay dengan nama tamu -->
     <div class="overlay" id="overlay">
-        <p id="welcome-message">Kepada Yth. Bapak/Ibu/Saudara/Saudari</p>
-        
-        <p><b>ㅤㅤㅤ</b></p>
+        <p id="welcome-message">Kepada Yth.</p>
+          <p><b>ㅤㅤㅤ</b></p>
         <button class="open-button" onclick="bukaUndangan()">Buka Undangan</button>
     </div>
 
@@ -239,11 +238,10 @@ var x = setInterval(function() {
     </audio>
 
     <script>
-        function getNamaDariURL() {
-            // Ambil path setelah domain
-            const path = window.location.pathname.split('/').filter(segment => segment);
-            // Cek apakah ada nama di path URL
-            return path.length > 1 ? decodeURIComponent(path[1]) : null;
+        function getNamaDariHash() {
+            // Ambil nama dari URL hash (setelah #)
+            const hash = window.location.hash.substring(1); // Menghapus #
+            return hash ? decodeURIComponent(hash) : null;
         }
 
         function bukaUndangan() {
@@ -252,11 +250,14 @@ var x = setInterval(function() {
         }
 
         // Ambil nama dari URL dan tampilkan
-        const namaTamu = getNamaDariURL();
+        const namaTamu = getNamaDariHash();
         if (namaTamu) {
-            document.getElementById("welcome-message").innerText = `Kepada Yth. Bapak/Ibu/Saudara/Saudari ${namaTamu}`;
+            document.getElementById("welcome-message").innerText = `Kepada Yth. ${namaTamu} Di Tempat`;
         }
     </script>
+
+</body>
+</html>
 
 </body>
 </html>
@@ -535,7 +536,7 @@ perkenankan kami menikahkan putra putri kami :</p>
                                 <h>Bagi Keluarga dan Kerabat yang ingin mengirimkan hadiah, silahkan mengirimkan nya melalui Transfer Rek BRI:</h>
                                 <b id="rekening">186601000472531</b> atas nama <b>Muhammad Jaka Fatahillah</b>
                                 <p><b>ㅤㅤㅤ</b></p><!-- Tombol Copy -->
-<button id="copyButton" onclick="copyRekening()" class="custom-button">SALIN NOMOR REKENING</button>
+<button id="copyButton" onclick="copyRekening()" class="custom-button">Salin Nomor Rekening</button>
 <p><b>ㅤㅤㅤ</b></p>
 <i>Sebelumnya, kami ucapkan terima kasih atas perhatian Bapak/Ibu/Saudara/i untuk kami.</i>
 
@@ -754,3 +755,4 @@ perkenankan kami menikahkan putra putri kami :</p>
 </body>
 
 </html>
+
