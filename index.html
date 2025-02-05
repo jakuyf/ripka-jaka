@@ -187,7 +187,7 @@ var x = setInterval(function() {
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.85);
+            background: rgba(0, 0, 0, 0.88);
             color: white;
             display: flex;
             align-items: center;
@@ -218,11 +218,12 @@ var x = setInterval(function() {
 
         /* Teks nama tamu menjadi bold */
         #welcome-message {
-            font-size: 24px;
+            font-size: 20px;
             margin-bottom: 30px; /* Menambah jarak ke bawah */
         }
 
         #guest-name {
+            font-size: 20px;
             font-weight: bold; /* Nama tamu di-bold */
         }
 
@@ -238,7 +239,7 @@ var x = setInterval(function() {
             bottom: 20px;
             left: 20px; /* Pindahkan tombol ke kiri bawah */
             background-color: #C7A17A; /* Soft gold dengan sedikit coklat */
-            padding: 10px 15px;
+            padding: 10px 10px;
             border-radius: 50%;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             cursor: pointer;
@@ -264,17 +265,32 @@ var x = setInterval(function() {
     </style>
 </head>
 <body>
+<!-- Overlay dengan nama tamu -->
+<div class="overlay" id="overlay">
+    <!-- Mengatur ukuran logo3 -->
+    <img src="assets/images/logo3.png" alt="Logo" class="small-logo">
+    
+    <p id="welcome-message">Kepada Yth. Bapak/Ibu/Saudara/i</p> 
 
-    <!-- Overlay dengan nama tamu -->
-    <div class="overlay" id="overlay">
-        <p id="welcome-message">Kepada Yth. Bapak/Ibu/Saudara/i</p> 
-        <span id="guest-name"></span>
-        
-        <!-- Teks kecil yang ditambahkan di bawah nama tamu -->
-        <p id="small-text">Tanpa mengurangi rasa hormat, izinkan kami mengundang Anda untuk hadir pada acara pernikahan kami.</p>
- <p>ㅤㅤ</p>
-        <button class="open-button" onclick="bukaUndangan()">Buka Undangan</button>
-    </div>
+    <span id="guest-name"></span>
+    
+    <!-- Teks kecil yang ditambahkan di bawah nama tamu -->
+    <p id="small-text">Tanpa mengurangi rasa hormat, izinkan kami mengundang Anda untuk hadir pada acara pernikahan kami.</p>
+<p>ㅤㅤ</p>
+    <img src="assets/images/section_shape2.png" alt="Shape">
+    <button class="open-button" onclick="bukaUndangan()">Buka Undangan</button>
+    <img src="assets/images/section_shape.png" alt="Shape">
+</div>
+
+<!-- Tambahkan CSS untuk memperbesar ukuran logo -->
+<style>
+    .small-logo {
+        width: 180px; /* Ubah ukuran sesuai kebutuhan (150px - 200px) */
+        height: auto; /* Menjaga rasio aspek */
+        margin-bottom: 20px; /* Menambahkan jarak bawah jika diperlukan */
+    }
+</style>
+
 
     <!-- Audio yang akan diputar -->
     <audio id="audio" loop>
@@ -441,13 +457,13 @@ perkenankan kami menikahkan putra putri kami :</p>
                            
                             <h3 class="event_title"><a>Akad Nikah</a></h3>
                              <p class="date">Sabtu, 01 November 2025</p>
-                            <p>09.00 WIB s.d 10.00 WIB</p>
+                            <span>09.00 - 11.00</p>
                              <h3 class="event_title"><a>Resepsi Pernikahan</a></h3>
                               <p class="date">Sabtu, 01 November 2025</p>
-                            <p>10.00 WIB s.d 14.00 WIB</p>
+                            <span>11.00 - selesai </p>
                             <h3 class="event_title"><a>Lokasi Pernikahan</a></h3>
                             <p>Jalan Syeh Quro
-                            Dusun Kerajan II RT 002/ RW 004, Desa Kedawung, Kecamatan Lemahabang, Kabupaten Karawang</p>
+                            Dusun Kerajan II RT 002/ RW 004, Desa Kedawung, Kecamatan Lemahabang, Kabupaten Karawang.</p>
                              <p><b>ㅤㅤㅤ</b></p>
                            <a href="https://maps.app.goo.gl/pQrBkNi9Ft4WLpX18" class="custom-button" target="_blank" rel="nofollow">Lihat Lokasi di Google Maps</a>
 
@@ -610,7 +626,7 @@ perkenankan kami menikahkan putra putri kami :</p>
                             <div class="single_event mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.8s">
                                 <a><img src="assets/images/logo-1.png" alt="logo"></a>
                                 <p><b>ㅤㅤㅤ</b></p>
-                                <h>Bagi Keluarga dan Kerabat yang ingin mengirimkan hadiah, silahkan mengirimkan nya melalui Transfer Rek BRI:</h>
+                                <h>Bagi Keluarga dan Kerabat yang ingin mengirimkan hadiah, silahkan mengirimkan nya melalui Transfer Rek BRI</h>
                                 <b id="rekening">186601000472531</b> atas nama <b>Muhammad Jaka Fatahillah</b>
                                 <p><b>ㅤㅤㅤ</b></p><!-- Tombol Copy -->
 <button id="copyButton" onclick="copyRekening()" class="custom-button">Salin Nomor Rekening</button>
@@ -711,9 +727,10 @@ perkenankan kami menikahkan putra putri kami :</p>
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSe7K7cFYydK8tYyY4Kxq5BuVtgGd7qE6v3o4WIG_ye2kPf3pQ/viewform" style="color: #D59A57" rel="nofollow"><h3 class="title">Best Wish</h3> 
                         <img src="assets/images/section_shape.png" alt="Shape"></a></p></b>
                     </div> <!-- section title -->
-                <p>Untuk mengirimkan doa & ucapan, silahkan tuliskan pada link berikut :</p>
+                <p>Untuk konfimasi kehadiran & mengirimkan ucapan, silahkan isi di link berikut :</p>
                   <p><b>ㅤㅤㅤ</b></p>
-<a href="https://forms.gle/HKoC7MY4yoKMFchj8" class="custom-button" target="_blank" rel="nofollow">Kirim Doa & Ucapan</a>
+
+<a href="https://forms.gle/HKoC7MY4yoKMFchj8" class="custom-button" target="_blank" rel="nofollow">Konfirmasi Kehadiran & Kirim Ucapan</a>
 
 <style>
   .custom-button {
@@ -789,7 +806,10 @@ perkenankan kami menikahkan putra putri kami :</p>
         </div> <div class="footer_copyright text-center"> <p>©Copyright
 2025</p> <p>Developed and Design with ❤️ by <a
 href="https://jakuyf.github.io/portfolio" style="color: #D59A57"
-rel="nofollow">JakuyF</a> </p> </div> <!--====== BACK TOP TOP PART START
+rel="nofollow">JakuyF</a> </p> </div>
+  <p><b>ㅤㅤㅤ</b></p>
+  <p><b>ㅤㅤㅤ</b></p> <!--====== BACK TOP TOP PART START
+
 ======--> <!-- <section class=""> <div class="container"> <div class="row">
 <div class="col-lg-">
                     
