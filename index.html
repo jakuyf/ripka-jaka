@@ -218,120 +218,89 @@ var x = setInterval(function() {
 
 
 
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Undangan Pernikahan</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <style>
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.90);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            z-index: 9999;
+            padding: 20px;
+        }
 
-    body.tidak-bisa-scroll {
-      height: 100vh;
-      overflow: hidden;
-    }
+        .open-button {
+            background-color: #d29856;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 25px;
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
 
-    .overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.90);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      z-index: 9999;
-      padding: 20px;
-    }
+        .open-button:hover {
+            background-color: #b37e41;
+            transform: scale(1.02);
+        }
 
-    .open-button {
-      background-color: #d29856;
-      color: white;
-      border: none;
-      padding: 15px 40px;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 25px;
-      transition: all 0.3s ease;
-    }
+        #welcome-message {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
 
-    .open-button:hover {
-      background-color: #b37e41;
-      transform: scale(1.02);
-    }
+        #guest-name {
+            font-size: 20px;
+            font-weight: bold;
+        }
 
-    #welcome-message {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
+        #small-text {
+            font-size: 14px;
+            color: #ccc;
+        }
 
-    #guest-name {
-      font-size: 20px;
-      font-weight: bold;
-    }
+        .music-control {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #d29856;
+            padding: 10px 10px;
+            border-radius: 50%;
+            box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            z-index: 9998;
+            transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+            border: none;
+        }
 
-    #small-text {
-      font-size: 14px;
-      color: #ccc;
-    }
+        .music-control img {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.2s ease-in-out;
+        }
 
-    .music-control {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      background-color: #d29856;
-      padding: 10px;
-      border-radius: 50%;
-      cursor: pointer;
-      z-index: 9998;
-      border: none;
-    }
+        .music-control:hover {
+            background-color: #b37e41;
+            transform: scale(1.05);
+        }
 
-    .music-control img {
-      width: 30px;
-      height: 30px;
-    }
-  </style>
-</head>
-<body class="tidak-bisa-scroll">
 
-  <!-- Overlay -->
-  <div class="overlay" id="overlay">
-    <img src="assets/images/icon.png" alt="Logo" class="small-logo">
-    <p id="welcome-message">Kepada Yth. Bapak/Ibu/Saudara/i</p> 
-    <span id="guest-name">Nama Tamu</span>
-    <p id="small-text">Tanpa mengurangi rasa hormat, izinkan kami mengundang Anda untuk hadir pada acara pernikahan kami.</p>
-    <p>❀༻ 𝓡𝓲𝓹𝓴𝓪 & 𝓙𝓪𝓴𝓪 ༺❀</p>
-    <img src="assets/images/section_shape2.png" alt="Shape">  
-    <button class="open-button" onclick="bukaUndangan()">Buka Undangan</button>  
-    <img src="assets/images/section_shape.png" alt="Shape">
-  </div>
-
-  <!-- Konten utama -->
-  <div style="height: 2000px; background: linear-gradient(white, #eee); padding: 30px;">
-    <h1>Ini halaman undangan</h1>
-    <p>Scroll harus bisa setelah undangan dibuka.</p>
-  </div>
-
-  <script>
-    function bukaUndangan() {
-      document.getElementById('overlay').style.display = 'none';
-      document.body.classList.remove('tidak-bisa-scroll');
-    }
-  </script>
-
-</body>
-</html>
 
 
 
