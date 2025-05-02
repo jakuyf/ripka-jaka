@@ -343,63 +343,43 @@ var x = setInterval(function() {
         Browser Anda tidak mendukung tag audio.
     </audio>
 
-<!-- Tombol Play/Pause dengan background -->
-<button class="music-control" id="playPauseBtn" onclick="togglePlayPause()">
-    <img id="playPauseIcon" src="assets/play-icon.png" alt="Play Icon">
-</button>
+  <!-- Tombol Play/Pause dengan background -->  <button class="music-control" id="playPauseBtn" onclick="togglePlayPause()">  
+    <img id="playPauseIcon" src="assets/play-icon.png" alt="Play Icon">  
+</button>  
 
-<style>
-    body.no-scroll {
-        overflow: hidden;
-    }
+<script>  
+    function getNamaDariHash() {  
+        // Ambil nama dari URL hash (setelah #)  
+        const hash = window.location.hash.substring(1); // Menghapus #  
+        return hash ? decodeURIComponent(hash) : null;  
+    }  
 
-    #overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: white; /* Bisa diganti dengan background sesuai desain */
-        z-index: 9999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-</style>
+    function bukaUndangan() {  
+        document.getElementById("overlay").style.display = "none"; // Hilangkan overlay  
+        document.getElementById("audio").play(); // Mulai musik  
+        document.getElementById("playPauseIcon").src = "assets/pause-icon.png"; // Ganti ikon menjadi pause  
+    }  
 
-<script>
-    function getNamaDariHash() {
-        // Ambil nama dari URL hash (setelah #)
-        const hash = window.location.hash.substring(1); // Menghapus #
-        return hash ? decodeURIComponent(hash) : null;
-    }
+    // Fungsi untuk toggle play/pause musik  
+    function togglePlayPause() {  
+        const audio = document.getElementById("audio");  
+        const playPauseIcon = document.getElementById("playPauseIcon");  
 
-    function bukaUndangan() {
-        document.getElementById("overlay").style.display = "none"; // Hilangkan overlay
-        document.body.classList.remove("no-scroll"); // Aktifkan scroll
-        document.getElementById("audio").play(); // Mulai musik
-        document.getElementById("playPauseIcon").src = "assets/pause-icon.png"; // Ganti ikon menjadi pause
-    }
+        if (audio.paused) {  
+            audio.play();  
+            playPauseIcon.src = "assets/pause-icon.png"; // Ganti ikon menjadi pause  
+        } else {  
+            audio.pause();  
+            playPauseIcon.src = "assets/play-icon.png"; // Ganti ikon menjadi play  
+        }  
+    }  
 
-    // Fungsi untuk toggle play/pause musik
-    function togglePlayPause() {
-        const audio = document.getElementById("audio");
-        const playPauseIcon = document.getElementById("playPauseIcon");
-
-        if (audio.paused) {
-            audio.play();
-            playPauseIcon.src = "assets/pause-icon.png";
-        } else {
-            audio.pause();
-            playPauseIcon.src = "assets/play-icon.png";
-        }
-    }
-
-    // Ambil nama dari URL dan tampilkan
-    const namaTamu = getNamaDariHash();
-    if (namaTamu) {
-        document.getElementById("guest-name").innerText = namaTamu;
-    }
+    // Ambil nama dari URL dan tampilkan  
+    const namaTamu = getNamaDariHash();  
+    if (namaTamu) {  
+        document.getElementById("guest-name").innerText = namaTamu;  
+    }  
+</script>
 
     // Kunci scroll saat halaman dimuat
     document.body.classList.add("no-scroll");
