@@ -222,20 +222,29 @@ var x = setInterval(function() {
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Undangan Pernikahan</title>
   <style>
-    body.tidak-scroll {
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      height: 100%;
+    }
+
+    /* Kunci scroll saat overlay muncul */
+    body.no-scroll {
       overflow: hidden;
+      position: fixed;
+      width: 100%;
     }
 
     .overlay {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      inset: 0;
       background: rgba(0, 0, 0, 0.90);
       color: white;
       display: flex;
@@ -256,7 +265,6 @@ var x = setInterval(function() {
       font-weight: bold;
       cursor: pointer;
       border-radius: 25px;
-      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
       transition: all 0.3s ease;
     }
 
@@ -310,12 +318,13 @@ var x = setInterval(function() {
     }
   </style>
 </head>
-<body class="tidak-scroll">
-  <!-- Overlay dengan nama tamu -->
+<body class="no-scroll">
+
+  <!-- Overlay awal -->
   <div class="overlay" id="overlay">
     <img src="assets/images/icon.png" alt="Logo" class="small-logo">
     <p id="welcome-message">Kepada Yth. Bapak/Ibu/Saudara/i</p> 
-    <span id="guest-name"></span>
+    <span id="guest-name">Tamu Undangan</span>
     <p id="small-text">Tanpa mengurangi rasa hormat, izinkan kami mengundang Anda untuk hadir pada acara pernikahan kami.</p>
     <p>❀༻ 𝓡𝓲𝓹𝓴𝓪 & 𝓙𝓪𝓴𝓪 ༺❀</p>
     <p>ㅤㅤ</p>
@@ -324,12 +333,15 @@ var x = setInterval(function() {
     <img src="assets/images/section_shape.png" alt="Shape">
   </div>
 
+  <!-- Konten panjang untuk uji scroll -->
+  <div style="height: 2000px; background: linear-gradient(#fff, #ccc);">
+    <h1>Selamat datang di undangan kami</h1>
+  </div>
+
   <script>
     function bukaUndangan() {
-      document.body.classList.remove('tidak-scroll');
-      document.body.style.overflow = 'auto';
-      document.documentElement.style.overflow = 'auto';
       document.getElementById('overlay').style.display = 'none';
+      document.body.classList.remove('no-scroll');
     }
   </script>
 </body>
