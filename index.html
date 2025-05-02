@@ -326,8 +326,10 @@ var x = setInterval(function() {
 
   <script>
     function bukaUndangan() {
-      document.body.classList.remove('tidak-scroll'); // Aktifkan scroll
-      document.getElementById('overlay').style.display = 'none'; // Sembunyikan overlay
+      document.body.classList.remove('tidak-scroll');
+      document.body.style.overflow = 'auto';
+      document.documentElement.style.overflow = 'auto';
+      document.getElementById('overlay').style.display = 'none';
     }
   </script>
 </body>
