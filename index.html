@@ -217,155 +217,127 @@ var x = setInterval(function() {
 </script>
 
 
- <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Undangan Pernikahan</title>
-    <style>
-        /* Overlay untuk menutupi layar sebelum undangan dibuka */
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.90);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            z-index: 9999;
-            padding: 20px;
-        }
 
-        .open-button {
-            background-color: #d29856; /* Warna gold kecoklatan */
-            color: white;
-            border: none;
-            padding: 15px 40px;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 25px;
-            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
-            transition: all 0.3s ease;
-        }
 
-        .open-button:hover {
-            background-color: #b37e41; /* Warna lebih gelap saat hover */
-            transform: scale(1.02);
-        }
-
-        /* Teks nama tamu menjadi bold */
-        #welcome-message {
-            font-size: 20px;
-            margin-bottom: 30px; /* Menambah jarak ke bawah */
-        }
-
-        #guest-name {
-            font-size: 20px;
-            font-weight: bold; /* Nama tamu di-bold */
-        }
-
-        /* Teks kecil di bawah nama tamu */
-        #small-text {
-            font-size: 14px;
-            color: #ccc;
-        }
-
-        /* Tombol Play/Pause dengan background */
-        .music-control {
-            position: fixed;
-            bottom: 20px;
-            left: 20px; /* Pindahkan tombol ke kiri bawah */
-            background-color: #d29856; /* Soft gold dengan sedikit coklat */
-            padding: 10px 10px;
-            border-radius: 50%;
-            box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
-            cursor: pointer;
-            z-index: 9998;
-            transition: transform 0.2s ease-in-out, background-color 0.3s ease;
-            border: none; /* Menghilangkan border hitam */
-        }
-
-        .music-control img {
-            width: 30px;
-            height: 30px;
-            transition: transform 0.2s ease-in-out;
-        }
-
-        .music-control:hover {
-            background-color: #b37e41; /* Warna sedikit lebih gelap saat hover */
-            transform: scale(1.05); /* Efek pembesaran saat di-hover */
-        }
-
-        .music-control img:hover {
-            transform: scale(1.1); /* Efek pembesaran pada gambar ikon */
-        }
-    </style>
-</head>
-<body>
-<!-- Overlay dengan nama tamu -->
-<div class="overlay" id="overlay">
-    <!-- Mengatur ukuran logo3 -->
-    <img src="assets/images/icon.png" alt="Logo" class="small-logo">
-    
-    <p id="welcome-message">Kepada Yth. Bapak/Ibu/Saudara/i</p> 
-
-    <span id="guest-name"></span>
-    
-    <!-- Teks kecil yang ditambahkan di bawah nama tamu -->
-    <p id="small-text">Tanpa mengurangi rasa hormat, izinkan kami mengundang Anda untuk hadir pada acara pernikahan kami.</p>
-<p>❀༻ 𝓡𝓲𝓹𝓴𝓪 & 𝓙𝓪𝓴𝓪 ༺❀</p>
-<p>ㅤㅤ</p>
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan</title>
   <style>
     body.tidak-scroll {
       overflow: hidden;
     }
-    .cover {
+
+    .overlay {
       position: fixed;
-      inset: 0;
-      background-color: white;
-      z-index: 9999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.90);
+      color: white;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      z-index: 9999;
+      padding: 20px;
+    }
+
+    .open-button {
+      background-color: #d29856;
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 25px;
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .open-button:hover {
+      background-color: #b37e41;
+      transform: scale(1.02);
+    }
+
+    #welcome-message {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    #guest-name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    #small-text {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .music-control {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #d29856;
+      padding: 10px;
+      border-radius: 50%;
+      box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      z-index: 9998;
+      transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+      border: none;
+    }
+
+    .music-control img {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .music-control:hover {
+      background-color: #b37e41;
+      transform: scale(1.05);
+    }
+
+    .music-control img:hover {
+      transform: scale(1.1);
     }
   </style>
 </head>
 <body class="tidak-scroll">
-  
-  <!-- Overlay awal -->
-  <div class="cover" id="cover">
-    <img src="assets/images/section_shape2.png" alt="Shape">
-    <button class="open-button" onclick="bukaUndangan()">Buka Undangan</button>
+  <!-- Overlay dengan nama tamu -->
+  <div class="overlay" id="overlay">
+    <img src="assets/images/icon.png" alt="Logo" class="small-logo">
+    <p id="welcome-message">Kepada Yth. Bapak/Ibu/Saudara/i</p> 
+    <span id="guest-name"></span>
+    <p id="small-text">Tanpa mengurangi rasa hormat, izinkan kami mengundang Anda untuk hadir pada acara pernikahan kami.</p>
+    <p>❀༻ 𝓡𝓲𝓹𝓴𝓪 & 𝓙𝓪𝓴𝓪 ༺❀</p>
+    <p>ㅤㅤ</p>
+    <img src="assets/images/section_shape2.png" alt="Shape">  
+    <button class="open-button" onclick="bukaUndangan()">Buka Undangan</button>  
     <img src="assets/images/section_shape.png" alt="Shape">
-  </div>
-
-  <!-- Konten lain di bawah sini -->
-  <div style="height: 2000px;">
-    <p>Konten undangan di sini...</p>
   </div>
 
   <script>
     function bukaUndangan() {
-      document.body.classList.remove('tidak-scroll');
-      document.getElementById('cover').style.display = 'none';
+      document.body.classList.remove('tidak-scroll'); // Aktifkan scroll
+      document.getElementById('overlay').style.display = 'none'; // Sembunyikan overlay
     }
   </script>
-
 </body>
 </html>
-</div>
+
+
+
+
+
+
 
 <!-- Tambahkan CSS untuk memperbesar ukuran logo -->
 <style>
