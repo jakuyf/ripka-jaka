@@ -321,90 +321,57 @@ var x = setInterval(function() {
     <p id="small-text">Tanpa mengurangi rasa hormat, izinkan kami mengundang Anda untuk hadir pada acara pernikahan kami.</p>
     <p>❀༻ 𝓡𝓲𝓹𝓴𝓪 & 𝓙𝓪𝓴𝓪 ༺❀</p>
     <p>ㅤㅤ</p>
-     <img src="assets/images/section_shape2.png" alt="Shape">  
-<button class="open-button" onclick="scrollKeCover()">Buka Undangan</button>  
+    <!-- Tombol & Background -->
+<img src="assets/images/section_shape2.png" alt="Shape">  
+<button class="open-button" onclick="bukaUndangan()">Buka Undangan</button>  
 <img src="assets/images/section_shape.png" alt="Shape">
 
-<script>
-  function scrollKeCover() {
-    const target = document.querySelector('#home');
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-</script>
-</div>
+<!-- Audio -->
+<audio id="audio" loop>
+  <source src="assets/audio1.mp3" type="audio/mpeg">
+  Browser Anda tidak mendukung tag audio.
+</audio>
 
-<script>
-    function bukaUndangan() {
-        // Sembunyikan overlay
-        document.getElementById('overlay').style.display = 'none';
-    }
-</script>
-</body>
-</html>
-
-
-
-
-
-
-
-<!-- Tambahkan CSS untuk memperbesar ukuran logo -->
-<style>
-    .small-logo {
-        width: 150px; /* Ubah ukuran sesuai kebutuhan (150px - 200px) */
-        height: auto; /* Menjaga rasio aspek */
-        margin-bottom: 10px; /* Menambahkan jarak bawah jika diperlukan */
-    }
-</style>
-
-
-    <!-- Audio yang akan diputar -->
-    <audio id="audio" loop>
-        <source src="assets/audio1.mp3" type="audio/mpeg">
-        Browser Anda tidak mendukung tag audio.
-    </audio>
-
-  <!-- Tombol Play/Pause dengan background -->  <button class="music-control" id="playPauseBtn" onclick="togglePlayPause()">  
-    <img id="playPauseIcon" src="assets/play-icon.png" alt="Play Icon">  
+<!-- Tombol Musik -->
+<button class="music-control" id="playPauseBtn" onclick="togglePlayPause()">  
+  <img id="playPauseIcon" src="assets/play-icon.png" alt="Play Icon">  
 </button>  
 
-<script>  
-    function getNamaDariHash() {  
-        // Ambil nama dari URL hash (setelah #)  
-        const hash = window.location.hash.substring(1); // Menghapus #  
-        return hash ? decodeURIComponent(hash) : null;  
-    }  
+<!-- Script -->
+<script>
+  function bukaUndangan() {
+    const overlay = document.getElementById("overlay");
+    if (overlay) overlay.style.display = "none";
 
-    function bukaUndangan() {  
-        document.getElementById("overlay").style.display = "none"; // Hilangkan overlay  
-        document.getElementById("audio").play(); // Mulai musik  
-        document.getElementById("playPauseIcon").src = "assets/pause-icon.png"; // Ganti ikon menjadi pause  
-    }  
+    const target = document.querySelector("#home");
+    if (target) target.scrollIntoView({ behavior: "smooth" });
 
-    // Fungsi untuk toggle play/pause musik  
-    function togglePlayPause() {  
-        const audio = document.getElementById("audio");  
-        const playPauseIcon = document.getElementById("playPauseIcon");  
+    const audio = document.getElementById("audio");
+    if (audio) audio.play();
 
-        if (audio.paused) {  
-            audio.play();  
-            playPauseIcon.src = "assets/pause-icon.png"; // Ganti ikon menjadi pause  
-        } else {  
-            audio.pause();  
-            playPauseIcon.src = "assets/play-icon.png"; // Ganti ikon menjadi play  
-        }  
-    }  
+    const icon = document.getElementById("playPauseIcon");
+    if (icon) icon.src = "assets/pause-icon.png";
+  }
 
-    // Ambil nama dari URL dan tampilkan  
-    const namaTamu = getNamaDariHash();  
-    if (namaTamu) {  
-        document.getElementById("guest-name").innerText = namaTamu;  
-    }  
+  function togglePlayPause() {
+    const audio = document.getElementById("audio");
+    const icon = document.getElementById("playPauseIcon");
+
+    if (audio.paused) {
+      audio.play();
+      icon.src = "assets/pause-icon.png";
+    } else {
+      audio.pause();
+      icon.src = "assets/play-icon.png";
+    }
+  }
+
+  const namaTamu = window.location.hash.substring(1);
+  if (namaTamu) {
+    const guest = document.getElementById("guest-name");
+    if (guest) guest.innerText = decodeURIComponent(namaTamu);
+  }
 </script>
-
-    
     </script>
 
 </body>
