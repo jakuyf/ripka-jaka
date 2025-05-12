@@ -311,16 +311,58 @@ var x = setInterval(function() {
 <body>
 <!-- Overlay dengan nama tamu -->
 <div class="overlay" id="overlay">
-    <img src="assets/images/icon.png" alt="Logo" class="small-logo">
-    
-    <p id="welcome-message">Kepada Yth. Bapak/Ibu/Saudara/i</p> 
+  <!-- Logo dan Teks Tamu -->
+<img src="assets/images/icon.png" alt="Logo" class="small-logo">
 
-    <span id="guest-name"></span>
-    
-    <!-- Teks kecil yang ditambahkan di bawah nama tamu -->
-    <p id="small-text">Tanpa mengurangi rasa hormat, izinkan kami mengundang Anda untuk hadir pada acara pernikahan kami.</p>
-    <p>❀༻ 𝓡𝓲𝓹𝓴𝓪 & 𝓙𝓪𝓴𝓪 ༺❀</p>
-    <p>ㅤㅤ</p>
+<p id="welcome-message">Kepada Yth. Bapak/Ibu/Saudara/i</p> 
+
+<span id="guest-name"></span>
+
+<!-- Teks kecil yang ditambahkan di bawah nama tamu -->
+<p id="small-text">Tanpa mengurangi rasa hormat, izinkan kami mengundang Anda untuk hadir pada acara pernikahan kami.</p>
+
+<p class="couple-names">❀༻ 𝓡𝓲𝓹𝓴𝓪 & 𝓙𝓪𝓴𝓪 ༺❀</p>
+<p>ㅤㅤ</p>
+
+<!-- Styling langsung -->
+<style>
+  .small-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #welcome-message,
+  #guest-name,
+  #small-text,
+  .couple-names {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 8px 0;
+    font-family: 'Segoe UI', 'Noto Serif', serif;
+  }
+
+  #guest-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  #small-text {
+    font-size: 14px;
+    font-style: italic;
+    color: #555;
+  }
+
+  .couple-names {
+    font-size: 18px;
+    font-family: 'Great Vibes', cursive;
+  }
+</style>
     <!-- Tombol & Background -->
 <img src="assets/images/section_shape2.png" alt="Shape">  
 <button class="open-button" onclick="bukaUndangan()">Buka Undangan</button>  
