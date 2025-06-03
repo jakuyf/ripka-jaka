@@ -572,92 +572,160 @@ perkenankan kami menikahkan putra-putri kami :</p>
 
     <!--====== OUR LOVE PART START ======-->
 
-    <section id="our_love" class="our_love_area pt-120">
-        <div class="container">
+  <!-- Tambahkan di <head> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_title text-center pb-30">
-                        <h3 class="title">Our Love Story</h3>
-                        <img src="assets/images/section_shape.png" alt="Shape">
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="love_wrapper">
-                <div class="single_love d-flex flex-wrap align-items-center">
-                    <div class="love_content order-md-last wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
-                        <h3 class="love_title">First Meet</h3>
-                        <p>Kami pertama kali bertemu saat menjadi teman kelompok orientasi dan sekaligus menjadi teman sekelas saat berkuliah di Jakarta pada tahun 2018. Walaupun pada tahun 2019 kami sudah tidak berada di kampus yang sama lagi, namun kami masih sering berkomunikasi hingga saat ini karena kami memiliki minat dan hobi yang sama, sekaligus untuk bertukar informasi dan materi kuliah.
-                    </p>
-                    </div>
-                    <div class="love_date">
-                        <p><i class="lni lni-heart-filled"></i><b>2018</b></p>
-                    </div>
-                    <div class="love_image order-md-first wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
-                        <img src="assets/images/love-1.jpg" alt="love">
-                    </div>
-                </div> <!-- single love -->
+<style>
+  .swiper-pagination-bullet {
+    background: white !important;
+    opacity: 0.7;
+  }
+  .swiper-pagination-bullet-active {
+    background: white !important;
+    opacity: 1;
+  }
+  .love_content p {
+    text-align: justify;
+  }
+</style>
 
-                <div class="single_love d-flex flex-wrap align-items-center">
-                    <div class="love_content text-lg-right wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
-                        <h3 class="love_title">Ta'aruf</h3>
-                        <p>Setelah menjalani pertemanan yang cukup lama, akhirnya kami memutuskan untuk ta'aruf pada tahun 2024 untuk lebih saling mengenal satu sama lain. Hingga pada tahun 2025, kami pun sepakat untuk serius melanjutkan hubungan ini dari pertemanan menuju ke pernikahan.</p>
-                    </div>
-                    <div class="love_date">
-                        <p><i class="lni lni-heart-filled"></i><b>2024</b></p>
-                    </div>
-                    <div class="love_image wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
-                        <img src="assets/images/love-2.jpg" alt="love">
-                    </div>
-                </div> <!-- single love -->
-
-                <div class="single_love d-flex flex-wrap align-items-center">
-                    <div class="love_content order-md-last wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
-                        <h3 class="love_title">Engagement</h3>
-                        <p>Acara lamaran telah kami laksanakan pada hari Minggu, 11 Mei 2025. Hal itu menjadi langkah awal untuk semakin menguatkan keyakinan kami dalam melangkah bersama. Setelah berbagai persiapan dan doa, insyaAllah acara pernikahan kami akan dilaksanakan pada hari Sabtu, 26 Juli 2025.</p>
-                    </div>
-                    <div class="love_date">
-                        <p><i class="lni lni-heart-filled"></i><b>2025</b></p>
-                    </div>
-                    <div class="love_image order-md-first wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
-                        <img src="assets/images/love-3.jpg" alt="love">
-                    </div>
-
-                </div> <!-- single love -->
-            </div> <!-- love wrapper -->
-
-<p><b>ㅤㅤㅤ</b></p>
-  <p>ㅤㅤㅤ</p>
-          <div class="row justify-content-center">
-                    <div class="section_title text-center pb-5">
-                         <h3 class="title"> <span>Gallery</span></h3>
-                       <img src="assets/images/section_shape.png" alt="Shape">
-<div class="slider">
-      <p>ㅤㅤㅤ</p>
-        <figure>
-            <div class="slide">
-                <img src="assets/gallery/foto1.png">
-            </div>
-
-            <div class="slide">
-                <img src="assets/gallery/foto2.png">
-            </div>
-
-            <div class="slide">
-                <img src="assets/gallery/foto3.png">
-            </div>
-
-            <div class="slide">
-                <img src="assets/gallery/foto4.png">
-            </div>
-
-             <div class="slide">
-                <img src="assets/gallery/foto5.png">
-            </div>
-        </figure>
+<section id="our_love" class="our_love_area pt-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="section_title text-center pb-30">
+          <h3 class="title">Our Love Story</h3>
+          <img src="assets/images/section_shape.png" alt="Shape">
+        </div>
+      </div>
     </div>
-        </div> <!-- container -->
-    </section>
+
+    <div class="love_wrapper">
+
+      <!-- First Meet -->
+      <div class="single_love d-flex flex-wrap align-items-center">
+        <div class="love_content order-md-last wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+          <h3 class="love_title">First Meet</h3>
+          <p>Kami pertama kali bertemu saat menjadi teman kelompok orientasi dan sekaligus menjadi teman sekelas saat berkuliah di Jakarta pada tahun 2018. Walaupun pada tahun 2019 kami sudah tidak berada di kampus yang sama lagi, namun kami masih sering berkomunikasi hingga saat ini karena kami memiliki minat dan hobi yang sama, sekaligus untuk bertukar informasi dan materi kuliah.</p>
+        </div>
+        <div class="love_date">
+          <p><i class="lni lni-heart-filled"></i><b>2018</b></p>
+        </div>
+        <div class="love_image order-md-first wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+          <div class="swiper swiper-love-1" style="border-radius: 12px; overflow: hidden;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/love-1.jpg" alt="Love 1 - Image 1" style="width:100%; height:auto;">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/love-2.jpg" alt="Love 1 - Image 2" style="width:100%; height:auto;">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/love-3.jpg" alt="Love 1 - Image 3" style="width:100%; height:auto;">
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-love-1"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ta'aruf -->
+      <div class="single_love d-flex flex-wrap align-items-center">
+        <div class="love_content text-lg-right wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+          <h3 class="love_title">Ta'aruf</h3>
+          <p>Setelah menjalani pertemanan yang cukup lama, akhirnya kami memutuskan untuk ta'aruf pada tahun 2024 untuk lebih saling mengenal satu sama lain. Hingga pada tahun 2025, kami pun sepakat untuk serius melanjutkan hubungan ini dari pertemanan menuju ke pernikahan.</p>
+        </div>
+        <div class="love_date">
+          <p><i class="lni lni-heart-filled"></i><b>2024</b></p>
+        </div>
+        <div class="love_image wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+          <div class="swiper swiper-love-2" style="border-radius: 12px; overflow: hidden;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/love-4.jpg" alt="Love 2 - Image 1" style="width:100%; height:auto;">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/love-5.jpg" alt="Love 2 - Image 2" style="width:100%; height:auto;">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/love-6.jpg" alt="Love 2 - Image 3" style="width:100%; height:auto;">
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-love-2"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Engagement -->
+      <div class="single_love d-flex flex-wrap align-items-center">
+        <div class="love_content order-md-last wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+          <h3 class="love_title">Engagement</h3>
+          <p>Acara lamaran telah kami laksanakan pada hari Minggu, 11 Mei 2025. Hal itu menjadi langkah awal untuk semakin menguatkan keyakinan kami dalam melangkah bersama. Setelah berbagai persiapan dan doa, insyaAllah acara pernikahan kami akan dilaksanakan pada hari Sabtu, 26 Juli 2025.</p>
+        </div>
+        <div class="love_date">
+          <p><i class="lni lni-heart-filled"></i><b>2025</b></p>
+        </div>
+        <div class="love_image order-md-first wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+          <div class="swiper swiper-love-3" style="border-radius: 12px; overflow: hidden;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/love-7.jpg" alt="Love 3 - Image 1" style="width:100%; height:auto;">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/love-8.jpg" alt="Love 3 - Image 2" style="width:100%; height:auto;">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/love-9.jpg" alt="Love 3 - Image 3" style="width:100%; height:auto;">
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-love-3"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Tambahkan ini di akhir <body> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  new Swiper('.swiper-love-1', {
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination-love-1',
+      clickable: true,
+    },
+  });
+  new Swiper('.swiper-love-2', {
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination-love-2',
+      clickable: true,
+    },
+  });
+  new Swiper('.swiper-love-3', {
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination-love-3',
+      clickable: true,
+    },
+  });
+</script>
+
+
 
     <!--====== OUR LOVE PART ENDS ======-->
   <p>ㅤㅤㅤ</p>
@@ -936,12 +1004,12 @@ perkenankan kami menikahkan putra-putri kami :</p>
         
     <div id="commentWrapper" class="comment-container">
 
-<div class="comment"><img src="assets/images/icon.png" alt="Shape"> <b>Ripka Fitriyani</b>
+<div class="comment"><img src="assets/images/icon.jpg" alt="Shape"> <b>Ripka Fitriyani</b>
             <p class="date"><i>Jun 22, 2025 at 15.50</i></p>
             <p class="desc">"Bismillah... Semoga pernikahan kita selalu dalam lindungan dan keberkahan Allah. Semoga kita bisa saling menguatkan dalam kebaikan, menghadapi setiap ujian dengan kesabaran, dan membangun keluarga yang penuh sakinah, mawaddah, wa rahmah. Semoga Jaka menjadi suami yang bijaksana, penuh kasih sayang, dan selalu diberkahi dalam setiap usahanya. Semoga Allah memberikan ridha pada setiap langkah kita dan menjadikan rumah tangga ini sebagai jalan menuju Jannah. Aamiin."</p>
         </div>
 
-        <div class="comment"><img src="assets/images/icon.png" alt="Shape"> <b>Muhammad Jaka Fatahillah</b>
+        <div class="comment"><img src="assets/images/icon.jpg" alt="Shape"> <b>Muhammad Jaka Fatahillah</b>
             <p class="date"><i>Jun 22, 2025 at 15.32</i></p>
             <p class="desc">"Alhamdulillah, sebentar lagi kita akan memulai perjalanan baru bersama. Semoga pernikahan kita selalu dalam lindungan Allah, diberi kebahagiaan dan kelancaran dalam setiap langkah hidupnya. Semoga Ripka menjadi istri yang shalihah, penuh kesabaran, dan selalu dikelilingi keberkahan. Semoga Allah menjadikan pernikahan ini sebagai ladang ibadah yang membawa ketenangan dan kebahagiaan untuk kita, serta menguatkan kita dalam menghadapi setiap perjalanan hidup kita bersama. Aamiin."</p>
         </div>
